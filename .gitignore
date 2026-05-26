@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Environment
+.env
+.env.local
+
+# Uploads
+public/uploads/*
+!public/uploads/.gitkeep
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Build output
+dist/
+
+# Session files
+*.session
+
+# Backup files
+*.bak
+
+# Installers / binaries
+composer.phar
+composer-setup.php
+
+# Windows-specific
+start-server.bat
+
+# Test files
+public/test.php
+public/test-chat.php

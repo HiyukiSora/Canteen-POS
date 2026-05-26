@@ -1,0 +1,134 @@
+/* CanteenPOS - Tailwind CSS + DaisyUI Business Theme */
+
+@import url('https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css');
+
+:root {
+    --primary: #3b82f6;
+    --primary-content: #ffffff;
+    --secondary: #64748b;
+    --secondary-content: #ffffff;
+    --accent: #f59e0b;
+    --accent-content: #000000;
+    --neutral: #1f2937;
+    --neutral-content: #f9fafb;
+    --base-100: #ffffff;
+    --base-200: #f3f4f6;
+    --base-300: #e5e7eb;
+    --base-content: #1f2937;
+    --info: #3b82f6;
+    --info-content: #ffffff;
+    --success: #22c55e;
+    --success-content: #ffffff;
+    --warning: #f59e0b;
+    --warning-content: #000000;
+    --error: #ef4444;
+    --error-content: #ffffff;
+}
+
+[data-theme="business"] {
+    --primary: #2563eb;
+    --primary-content: #ffffff;
+    --secondary: #475569;
+    --secondary-content: #ffffff;
+    --accent: #f59e0b;
+    --accent-content: #000000;
+    --neutral: #1e293b;
+    --neutral-content: #f8fafc;
+    --base-100: #ffffff;
+    --base-200: #f1f5f9;
+    --base-300: #e2e8f0;
+    --base-content: #1e293b;
+    --info: #0ea5e9;
+    --info-content: #ffffff;
+    --success: #10b981;
+    --success-content: #ffffff;
+    --warning: #f59e0b;
+    --warning-content: #000000;
+    --error: #ef4444;
+    --error-content: #ffffff;
+    --rounded-box: 0.75rem;
+    --rounded-btn: 0.5rem;
+    --rounded-badge: 0.25rem;
+    --animation-btn: 0.25s;
+    --animation-input: 0.2s;
+    --btn-focus-scale: 0.98;
+    --border-btn: 1px;
+    --tab-border: 1px;
+    --tab-radius: 0.5rem;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.product-card {
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item {
+    transition: background-color 0.2s ease;
+}
+
+.sidebar-item {
+    transition: all 0.2s ease;
+}
+
+.sidebar-item:hover {
+    background-color: var(--base-200);
+}
+
+.sidebar-item.active {
+    background-color: var(--primary);
+    color: var(--primary-content);
+}
+
+.badge-custom {
+    font-weight: 600;
+}
+
+.tab-content {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.loading-spinner-custom {
+    width: 2rem;
+    height: 2rem;
+    border: 3px solid var(--base-300);
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--base-200);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+}

@@ -1,0 +1,14 @@
+{
+    "name": "canteen/pos",
+    "description": "School Canteen POS System",
+    "type": "project",
+    "require": {
+        "php": ">=8.0",
+        "cboden/ratchet": "^0.4.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
