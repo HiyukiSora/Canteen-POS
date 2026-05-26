@@ -26,11 +26,12 @@ class Database {
     // Private constructor - prevents direct instantiation
     private function __construct() {
         // Get database credentials from environment variables or use defaults
-        $host = getenv('DB_HOST') ?: '127.0.0.1';
-        $port = getenv('DB_PORT') ?: '3306';
-        $dbname = getenv('DB_NAME') ?: 'canteen_pos';
-        $user = getenv('DB_USER') ?: 'root';
-        $pass = getenv('DB_PASS') ?: '';
+        // Supports both custom (DB_*) and Railway-provided (MYSQL*) env var names
+        $host = getenv('DB_HOST') ?: getenv('MYSQLHOST') ?: '127.0.0.1';
+        $port = getenv('DB_PORT') ?: getenv('MYSQLPORT') ?: '3306';
+        $dbname = getenv('DB_NAME') ?: getenv('MYSQLDATABASE') ?: getenv('MYSQL_DATABASE') ?: 'canteen_pos';
+        $user = getenv('DB_USER') ?: getenv('MYSQLUSER') ?: getenv('MYSQL_USER') ?: 'root';
+        $pass = getenv('DB_PASS') ?: getenv('MYSQLPASSWORD') ?: getenv('MYSQL_PASSWORD') ?: '';
 
         try {
             // Create PDO connection with UTF-8 support
