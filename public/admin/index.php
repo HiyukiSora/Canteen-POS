@@ -31,10 +31,6 @@ if (isset($_SESSION['user_id']) && $_SESSION['role'] === 'admin') {
         .btn-outline { margin-top: 10px; }
         .error { background: #fef2f2; color: #ef4444; padding: 12px; border-radius: 10px; margin-bottom: 16px; font-size: 13px; display: none; border: 1px solid #fecaca; }
     </style>
-    <link rel="manifest" href="../manifest.json">
-    <meta name="theme-color" content="#2563eb">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="apple-touch-icon" href="../assets/icons/icon.svg">
 </head>
 <body>
     <div class="login-box">
@@ -99,6 +95,5 @@ if (isset($_SESSION['user_id']) && $_SESSION['role'] === 'admin') {
             }
         });
     </script>
-    <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('../sw.js');}</script>
 </body>
 </html>

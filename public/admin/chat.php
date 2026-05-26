@@ -13,10 +13,6 @@ $user = ['id' => $_SESSION['user_id'], 'username' => $_SESSION['username'], 'ful
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat - CanteenPOS Admin</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="manifest" href="../manifest.json">
-    <meta name="theme-color" content="#2563eb">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="apple-touch-icon" href="../assets/icons/icon.svg">
     <style>
         .chat-container { display: flex; height: calc(100vh - 160px); background: white; border-radius: 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.06); overflow: hidden; border: 1px solid #e2e8f0; }
         .chat-users { width: 220px; border-right: 1px solid #e2e8f0; overflow: auto; }
@@ -181,6 +177,5 @@ $user = ['id' => $_SESSION['user_id'], 'username' => $_SESSION['username'], 'ful
         
         loadCashiers();
     </script>
-    <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('../sw.js');}</script>
 </body>
 </html>

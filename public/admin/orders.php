@@ -16,10 +16,6 @@ $user = ['id' => $_SESSION['user_id'], 'username' => $_SESSION['username'], 'ful
     <style>
         .order-detail-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #f1f5f9; }
     </style>
-    <link rel="manifest" href="../manifest.json">
-    <meta name="theme-color" content="#2563eb">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="apple-touch-icon" href="../assets/icons/icon.svg">
 </head>
 <body>
         <div class="header">
@@ -130,6 +126,5 @@ $user = ['id' => $_SESSION['user_id'], 'username' => $_SESSION['username'], 'ful
         document.getElementById('orderDateFilter').valueAsDate = new Date();
         loadOrders();
     </script>
-    <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('../sw.js');}</script>
 </body>
 </html>

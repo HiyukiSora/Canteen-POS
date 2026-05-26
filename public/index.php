@@ -31,10 +31,6 @@
         .error { background: #fef2f2; color: #ef4444; padding: 12px; border-radius: 10px; margin-bottom: 16px; font-size: 13px; display: none; border: 1px solid #fecaca; }
         .creds { text-align: center; font-size: 12px; color: #94a3b8; margin-top: 20px; padding-top: 16px; border-top: 1px solid #f1f5f9; }
     </style>
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#2563eb">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="apple-touch-icon" href="assets/icons/icon.svg">
 </head>
 <body>
     <div class="login-box">
@@ -126,6 +122,5 @@
             }
         });
     </script>
-    <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('sw.js');}</script>
 </body>
 </html>

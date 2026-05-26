@@ -48,10 +48,6 @@ $user = ['id' => $_SESSION['user_id'], 'username' => $_SESSION['username'], 'ful
         .notif-item.unread { background: #eff6ff; }
         .notif-empty { padding: 30px; text-align: center; color: #94a3b8; font-size: 13px; }
     </style>
-    <link rel="manifest" href="../manifest.json">
-    <meta name="theme-color" content="#2563eb">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="apple-touch-icon" href="../assets/icons/icon.svg">
 </head>
 <body>
     <div class="header">
@@ -322,6 +318,5 @@ $user = ['id' => $_SESSION['user_id'], 'username' => $_SESSION['username'], 'ful
         checkNotifications();
         setInterval(checkNotifications, 10000);
     </script>
-    <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('../sw.js');}</script>
 </body>
 </html>

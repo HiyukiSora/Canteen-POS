@@ -13,10 +13,6 @@ $user = ['id' => $_SESSION['user_id'], 'username' => $_SESSION['username'], 'ful
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Users - CanteenPOS Admin</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="manifest" href="../manifest.json">
-    <meta name="theme-color" content="#2563eb">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="apple-touch-icon" href="../assets/icons/icon.svg">
 </head>
 <body>
         <div class="header">
@@ -174,6 +170,5 @@ $user = ['id' => $_SESSION['user_id'], 'username' => $_SESSION['username'], 'ful
 
         loadUsers();
     </script>
-    <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('../sw.js');}</script>
 </body>
 </html>

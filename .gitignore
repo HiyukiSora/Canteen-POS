@@ -43,3 +43,6 @@ start-server.bat
 # Test files
 public/test.php
 public/test-chat.php
+
+# Composer lock (optional - remove if you want to commit deps)
+# composer.lock

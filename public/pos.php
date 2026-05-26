@@ -127,10 +127,6 @@ $user = ['id' => $_SESSION['user_id'], 'username' => $_SESSION['username'], 'ful
             .products-section { padding: 16px; }
         }
     </style>
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#2563eb">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="apple-touch-icon" href="assets/icons/icon.svg">
 </head>
 <body>
     <div class="header">
@@ -880,6 +876,5 @@ $user = ['id' => $_SESSION['user_id'], 'username' => $_SESSION['username'], 'ful
         loadCategories();
         loadProducts();
     </script>
-    <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('sw.js');}</script>
 </body>
 </html>
